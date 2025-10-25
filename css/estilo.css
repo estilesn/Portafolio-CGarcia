@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    margin: auto; 
+}
+
+h2, h3, h4, h5, p, label, time, a {
+    font-family: "DM Sans", system-ui;
+}
+
+h1{
+    font-family: "BBH Sans Bartle", system-ui;
+}
+
+#menu-navegacion ul{   /* Menu de navegacion */
+    list-style-type:none; /*quita las vi;etas (o sea, los puntos que tiene una lista*/
+    display: flex;
+    gap: 5%;
+    margin: 0; /*las listas por default ponen un margen. quita el margen de las listas*/
+    padding:2%;
+    background-color: black;
+    height: 50px;
+}
+
+#menu-navegacion a{       /*letras menu de navegacion*/
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-family: "BBH Sans Bartle", system-ui;
+    flex-grow: 1;
+    transition: .5s ease;
+}
+
+#menu-navegacion a:hover{   /*letras menu de navegacion cuando pasas el mouse por ellas*/
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    font-size: 125%;
+}
+
+#sobre-mi{     /*todo el sector de sobre mi*/
+    display: flex;
+    padding: 10% 2.5%;
+}
+
+#sobre-mi h1{   /*Soy ingeniero parte*/
+    font-size: 400%;
+    margin-bottom: 3%;
+
+}
+#sobre-mi h2{ /*Hola soy cristian parte*/
+    font-size: 200%;
+    margin-bottom: 2%;
+}
+
+#sobre-mi p{  /*Soy apasionado parte*/
+    font-size: 150%;
+}
+
+.informacion{ /*Div donde esta el sobre mi*/
+}
+
+.foto-perfil img{
+    width: 650px;
+}
+
+.foto-perfil img:hover{
+    width: 650px;
+}
+
+#experiencia {   /*todo el sector de experiencia*/
+    padding:2%;
+}
+
+
+#experiencia h2{   /*titulos experiencia*/
+    font-size: 220%;
+}
+
+#mis-proyectos{ /*area donde estan todos los articulos de experiencia*/
+    display:flex;
+}
+
+.proyecto{     /* los articulos de experiencia, contenido y su interior*/
+    padding: 5% 20px;
+    display:inline-block;
+    text-align: center;
+    width: 800px;
+    height: 500px;
+}
+
+.proyecto h3{ /*titulo proyecto*/
+    font-size: 120%;
+    margin-bottom: 20px;
+}
+
+.proyecto h4{ /*Tecnologias usadas*/
+    font-size: 120%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.proyecto p{ /*parrafos y texto de cada proyecto*/
+    font-size: 120%;
+    text-align: justify;
+    margin-bottom: 25px;
+    width: 414px;
+    height: 120px;
+}
+
+.proyecto img{ /*imagenes dentro de los articulos de proyecto*/
+    width: 50px;
+    height: 50px;
+    padding: 0 10px;
+    margin-bottom: 30px;
+}
+
+#rol {
+    text-align: center;
+}
+
+#habilidades{  /*Toda la seccion de habilidades*/
+    padding: 30px;
+    text-align: center;
+}
+
+#habilidades h2{ /*Titulos de habilidades*/
+
+}
+
+#habilidades img{ /*Imagenes de habilidades*/ 
+    width: 60px;
+    padding: 50px;
+    opacity: .8;
+    flex-grow: 1;
+    transition: .5s ease;
+}
+
+#habilidades img:hover{ /*Imagenes de habilidades*/ 
+    width: 100px;
+    padding: 30px;
+    opacity: 1;
+    filter:contrast(120%)
+}
+
+#idioma{ /*sector de idiomas*/
+    display: flex;
+    text-align: center;
+    padding: 30px;
+}
+
+#idiomas h2{
+    padding: 30px;
+    text-align: center;
+}
+
+#idiomas h4{
+    font-size: 150%;
+}
+
+#idioma img{ /*Tama;o de imagenes en idioma*/
+    width: 500px;
+    height: 300px;
+    opacity: .6;
+    flex-grow: 1;
+    transition: .5s ease;
+    padding-bottom: 50px;
+}   
+#idioma img:hover{ /*Imagenes de habilidades*/ 
+    width: 590px;
+    opacity: 1;
+    filter:contrast(120%)
+}
+
+#contactame{
+    display:flex;
+    margin-top: 200px;
+    padding: 50px;
+    background: url("/images/background-form.jpeg");
+    background-size: contain;
+    background-position: center;
+    height: 500px;
+}
+
+#contactame h2{
+    font-family: "BBH Sans Bartle", system-ui;
+    font-size: 170%;
+    color: black;
+    text-shadow: 5px 5px 0 white;
+}
+
+form{
+    background: linear-gradient(ffffff34, ffffff27);
+    padding: 50px;
+    color: rgb(0, 0, 0);
+    font-size: 110%;
+    border: 1px solid ffffff83;
+    transition: .5s ease;
+    text-align: center;
+
+    width: 230px;
+    height: 260px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    backdrop-filter: blur(5px);
+}
+
+form:hover{
+    width: 330px;
+    height: 360px;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 20px 32px whitesmoke;
+}
+
+
+
+form input, textarea{
+    outline:none;
+    width: 250px;
+    height: 40px;
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 60%;
+    font-family: "BBH Sans Bartle", system-ui;
+    
+}
+
+form label{
+    font-family: "BBH Sans Bartle", system-ui;
+}
+
+
+
+#contactame button{
+    margin-top: 15px;
+    border-color: white;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+    font-family: "BBH Sans Bartle", system-ui;
+    transition: .2s;
+    text-shadow: 2px 2px black;
+}
+
+#contactame button:hover{
+    border-color: black;
+    background-color: white;
+    color: black;
+    
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    font-family: "DM Sans", system-ui;
+    padding: 20px;
+    display: flex;
+}
